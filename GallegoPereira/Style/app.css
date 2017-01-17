@@ -198,3 +198,12 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+u:link{
+  color:gray;
+}
+u:hover{
+  color:#FFFF8D;
+}
+u:active{
+  color:gray;
+}
