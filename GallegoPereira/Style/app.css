@@ -65,9 +65,9 @@ html, body {
   height: auto;
 }
 .mdl-demo .mdl-card__supporting-text {
-  margin: auto;
-  flex-grow: 1;
-  width: calc(100% - 80px);
+  display: inline-block;
+  margin: -1% 1.5%;
+  width: 48%;
   color: #FFFFFF;
 }
 .mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
