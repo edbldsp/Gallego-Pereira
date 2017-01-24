@@ -26,6 +26,12 @@
   <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   <link rel="stylesheet" href="../Style/app.css">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <style>
+  .mySlides {display:none;}
+  </style>
+
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -41,7 +47,16 @@
         <a href="index.html" class="mdl-layout__tab is-active">Home</a>
       </div>
     </header>
+
     <main class="mdl-layout__content" style="background-color:#E0E0E0;">
+
+      <div class="w3-content w3-section" style="max-width:500px; background-color:#E0E0E0;">
+        <img class="mySlides w3-animate-left" src=".../Img/img1" style="width:100%; height:50%">
+        <img class="mySlides w3-animate-left" src=".../Img/Fibra" style="width:100%; height:50%">
+        <img class="mySlides w3-animate-left" src=".../Img/img3" style="width:100%; height:50%">
+        <img class="mySlides w3-animate-left" src=".../Img/img4" style="width:100%; height:50%">
+      </div>
+
       <div class="mdl-layout__tab-panel is-active" id="overview">
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -72,10 +87,10 @@
         <div class="mdl-mega-footer--middle-section">
           <div class="mdl-mega-footer--drop-down-section">
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer--heading">Entre em contato!</h1>
+            <h1 class="mdl-mega-footer--heading">Entre em contato :</h1>
             <ul class="mdl-mega-footer--link-list">
               <li>Celular : +55 12 99223 0550</li>
-              <a href="mailto:gallegopereiraconsulting@gmail.com">E-Mail : <u style="color:#4169E1">gallegopereiraconsulting@gmail.com</u></a>
+              <a href="mailto:contato@gallegopereira.com.br">E-Mail : <u style="color:#4169E1">contato@gallegopereira.com.br</u></a>
             </ul>
           </div>
           <div class="mdl-mega-footer--drop-down-section">
@@ -96,5 +111,21 @@
     </main>
   </div>
   <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2500);
+    }
+  </script>
 </body>
 </html>
