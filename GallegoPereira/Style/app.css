@@ -1,19 +1,3 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
@@ -50,25 +34,33 @@ html, body {
   line-height: 64px;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-  background-color: #C62828;
+  background-color: white;
+  height: 3px;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
-  padding: 120px 50px 100px 65px;
-  text-align: justify;
+  padding: 48px 0px 60px 0px;
 }
 .mdl-demo .mdl-card {
   height: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EEEEEE;
 }
 .mdl-demo .mdl-card > * {
   height: auto;
 }
 .mdl-demo .mdl-card__supporting-text {
-  display: inline-block;
-  margin: 0% 1.5%;
-  width: 48%;
-  color: #FFFFFF;
+  margin: 40px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+  color: black;
+  width: calc(100% - 80px);
 }
 .mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
   margin-top: 0;
@@ -102,9 +94,9 @@ html, body {
   position: relative;
   margin-bottom: 48px;
 }
-.mdl-demo section.section--left {
-  margin: 20px 570px 20px 5px;
-}
+
+.mdl-demo section.section--center {
+  max-width: 720px;
 
 .mdl-demo section > header{
   display: flex;
@@ -172,9 +164,7 @@ html, body {
   margin-bottom: 24px;
 }
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-image: url("https://raw.githubusercontent.com/edbldsp/Gallego-Pereira/master/GallegoPereira/Img/Fibra.jpg");
-  background-repeat: no-repeat;
-  background-size:100% 100%;
+  background-color: #E0E0E0;
 }
 .mdl-demo .toc {
   border-left: 4px solid #C1EEF4;
@@ -198,12 +188,10 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
-u:link{
-  color:gray;
-}
-u:hover{
-  color:#FFFF8D;
-}
-u:active{
-  color:gray;
+
+section.section--lastfooter{
+  margin: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
 }
