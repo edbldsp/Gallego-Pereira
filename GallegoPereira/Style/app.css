@@ -89,15 +89,13 @@ html, body {
   top: 36px;
   z-index: 999;
 }
-
 .mdl-demo .mdl-layout__content section:not(:last-of-type) {
   position: relative;
   margin-bottom: 48px;
 }
-
 .mdl-demo section.section--center {
   max-width: 720px;
-
+}
 .mdl-demo section > header{
   display: flex;
   align-items: center;
